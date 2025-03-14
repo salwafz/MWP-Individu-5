@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 150px; /* Atur tinggi minimum header agar lebih tinggi */
+    display: flex;
+    align-items: center; /* Memastikan konten tetap sejajar */
+}
+
+/* Container agar elemen sejajar */
+header .container {
+    display: flex;
+    max-width: 1000px; /* Sesuaikan dengan lebar yang lebih proporsional */
+    margin: 0 auto; /* Untuk membuatnya tetap berada di tengah */
+    justify-content: space-between; /* Logo di kiri, menu di kanan */
+    align-items: center; /* Semua elemen sejajar secara vertikal */
+}
+
+header .logo a {
+    display: flex;
+    align-items: center; /* Mengatur logo dan teks sejajar vertikal */
+    text-decoration: none;
+    color: #333;
+}
+
+/* Gambar logo */
+header .logo img {
+    height: 80px; /* Sesuaikan ukuran */
+    width: auto;
+    margin-right: 10px; /* Beri jarak dengan teks */
+}
+
+/* Teks logo */
+header .logo .logo-text {
+    display: flex;
+    flex-direction: column; /* Memastikan teks tetap vertikal */
+    justify-content: center; /* Agar teks sejajar dengan logo */
+    line-height: 1.2;
+}
+
+/* Style teks agar terlihat seperti gambar pertama */
+header .logo .logo-text span {
+    display: block; /* Agar "Salwa’s" dan "Portofolio" tetap di baris berbeda */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu navigasi */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Item menu */
+header nav ul li {
+    margin-left: 20px;
+}
+
+/* Link menu */
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* Hero Section */
+#hero {
+    background: url('images/walll.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #d6d0f9;
+    color: #444;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.hero-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 250px;
+    border-radius: 50%;
+    border: 8px solid #c0b5db;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    color: black;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.about-details div {
+    text-align: left;
+    width: 45%;
+}
+
+.about-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-details p, .about-details a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-light {
+    background: #d3baf5 ;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+
+/* project Section */
+#project {
+    background: #d3baf5 ;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#project h2 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 300px)); /* Ubah ukuran agar lebih kecil */
+    gap: 20px;
+    justify-content: center; /* Agar tetap rata tengah */
+}
+
+.project-item {
+    background: transparent ;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+}
+
+.project-item img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background: #9e93e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
